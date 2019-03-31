@@ -1,8 +1,8 @@
 ---
 path: '/services/superannuation'
-title: "Superannuation"
+title: 'Time off Accruals'
 date: 2018-11-28T15:14:54+10:00
-image: "/services/default.png"
+image: '/services/default.png'
 featured: true
 draft: false
 ---

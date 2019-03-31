@@ -1,5 +1,5 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 
 const SubFooter = props => (
   <div className="sub-footer-strip">
@@ -8,14 +8,15 @@ const SubFooter = props => (
         <div className="col-12">
           <div className="sub-footer">
             <ul>
-              <li>
+              {/* <li>
                 <strong>Phone: </strong>
                 {props.data.site.siteMetadata.contact.phone}
-              </li>
+              </li> */}
               <li>
-                <strong>Email: </strong>
-{' '}
-                <a href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
+                <strong>Email: </strong>{' '}
+                <a
+                  href={`mailto:${props.data.site.siteMetadata.contact.email}`}
+                >
                   {props.data.site.siteMetadata.contact.email}
                 </a>
               </li>
@@ -30,7 +31,7 @@ const SubFooter = props => (
       </div>
     </div>
   </div>
-);
+)
 
 export default props => (
   <StaticQuery
@@ -48,4 +49,4 @@ export default props => (
     `}
     render={data => <SubFooter data={data} />}
   />
-);
+)

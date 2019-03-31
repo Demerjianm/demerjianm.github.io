@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import SEO from '../../components/SEO';
-import Layout from '../../layouts/index';
+import React from 'react'
+import { Link, graphql } from 'gatsby'
+import SEO from '../../components/SEO'
+import Layout from '../../layouts/index'
 
-const Services = (props) => {
-  const services = props.data.allMarkdownRemark.edges;
+const Services = props => {
+  const services = props.data.allMarkdownRemark.edges
   return (
     <Layout bodyClass="page-services">
       <SEO title="Services" />
@@ -12,7 +12,7 @@ const Services = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1>Services</h1>
+              <h1>Features</h1>
             </div>
           </div>
         </div>
@@ -21,11 +21,16 @@ const Services = (props) => {
       <div className="container pb-6">
         <div className="row">
           {services.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+            <div
+              key={edge.node.frontmatter.path}
+              className="col-12 col-md-4 mb-1"
+            >
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h2>
-                    <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+                    <Link to={edge.node.frontmatter.path}>
+                      {edge.node.frontmatter.title}
+                    </Link>
                   </h2>
                   <p>{edge.node.excerpt}</p>
                 </div>
@@ -35,8 +40,8 @@ const Services = (props) => {
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query ServicesQuery {
@@ -55,6 +60,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default Services;
+export default Services

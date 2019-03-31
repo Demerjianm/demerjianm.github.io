@@ -5,12 +5,11 @@ module.exports = {
     title: 'Baseline',
     description: 'my theme',
     contact: {
-      phone: 'XXX XXX XXX',
       email: 'info@baselinesoftware.io'
     },
     menuLinks: [
       {
-        name: 'Services',
+        name: 'Features',
         link: '/services'
       },
       {
@@ -18,7 +17,7 @@ module.exports = {
         link: '/team'
       },
       {
-        name: 'Testimonials',
+        name: 'Blog',
         link: '/testimonials'
       },
       {

@@ -1,12 +1,12 @@
 ---
 path: '/team/sage-kirk'
-title: 'Sage Kirk'
+title: 'Janden Ma'
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: '/team/sage-kirk-485982-unsplash.jpg'
-jobtitle: 'Accountant'
-email: 'sage@test.com'
-linkedinurl: 'www.linkedin.com/sagekirk21'
+image: '/team/janden-ma.jpg'
+jobtitle: 'I find the Bugs'
+email:
+linkedinurl: 'https://www.linkedin.com/in/janden-ma-132476122/'
 weight: 2
 ---
 

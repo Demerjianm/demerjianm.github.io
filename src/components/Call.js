@@ -1,13 +1,13 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 const Call = props => (
   <div className="call">
     <div className="call-box-top">
-      <div className="call-phone">
+      {/* <div className="call-phone">
         <strong>Phone: </strong>
         {props.data.site.siteMetadata.contact.phone}
-      </div>
+      </div> */}
       <div className="call-email">
         <strong>Email: </strong>
         <a href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
@@ -23,7 +23,7 @@ const Call = props => (
       </div>
     )}
   </div>
-);
+)
 
 export default props => (
   <StaticQuery
@@ -43,4 +43,4 @@ export default props => (
     `}
     render={data => <Call button={props.button} data={data} />}
   />
-);
+)

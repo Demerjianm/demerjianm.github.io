@@ -19,10 +19,10 @@ const Home = props => {
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h1>Baseline - Finally simplified.</h1>
+          <h1>Baseline - Software simplified.</h1>
           <p>
-            Taking the complicated things in business and bullding simple apps
-            to solve them.
+            Taking the complicated things in business and building simple
+            application to solve them.
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@ const Home = props => {
       <div className="container pt-8 pt-md-10">
         <div className="row justify-content-start">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-3">Our Services</h2>
+            <h2 className="title-3 text-dark mb-3">Features</h2>
           </div>
           {markdown.map(edge => (
             <div
@@ -55,7 +55,7 @@ const Home = props => {
           ))}
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
-              View All Services
+              View All Features
             </Link>
           </div>
         </div>
