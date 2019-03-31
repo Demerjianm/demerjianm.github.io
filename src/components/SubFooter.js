@@ -41,7 +41,6 @@ export default props => (
           siteMetadata {
             contact {
               email
-              phone
             }
           }
         }

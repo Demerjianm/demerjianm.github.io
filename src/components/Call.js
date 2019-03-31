@@ -35,7 +35,6 @@ export default props => (
             description
             contact {
               email
-              phone
             }
           }
         }
