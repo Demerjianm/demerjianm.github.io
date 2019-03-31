@@ -6,7 +6,7 @@ module.exports = {
     description: 'my theme',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com'
+      email: 'info@baselinesoftware.io'
     },
     menuLinks: [
       {
