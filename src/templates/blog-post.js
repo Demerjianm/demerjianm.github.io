@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import SEO from '../components/SEO'
 import Layout from '../layouts/index'
 import { formatPostDate, formatReadingTime } from '../utils/helpers'
-
+import Signup from '../components/Signup.js'
 const Service = props => {
   console.log(props)
   const { data } = props
@@ -16,8 +16,8 @@ const Service = props => {
       <SEO title={title} />
       <div className="strip strip-white strip-diagonal">
         <div className="container pt-4 pt-md-10">
-          <div className="row justify-content-start">
-            <div className="col-12 col-md-6">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8">
               <div className="service service-single">
                 <h1 className="title">{title}</h1>
                 <p
@@ -37,6 +37,30 @@ const Service = props => {
                   dangerouslySetInnerHTML={{ __html: html }}
                 />
               </div>
+              <div
+                style={{
+                  margin: '90px 0 40px 0'
+                  // fontFamily: systemFont
+                }}
+              >
+                <Signup />
+              </div>
+              {/* <h3
+                style={{
+                  fontFamily: 'Montserrat, sans-serif'
+                  // marginTop: rhythm(0.25)
+                }}
+              >
+                <Link
+                  style={{
+                    boxShadow: 'none',
+                    textDecoration: 'none'
+                  }}
+                  to={'/'}
+                >
+                  Baseline
+                </Link>
+              </h3> */}
               <nav>
                 <ul
                   style={{
