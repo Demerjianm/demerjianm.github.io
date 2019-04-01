@@ -1,15 +1,31 @@
-const path = require('path');
+const path = require('path')
 
 // Create pages from markdown files
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
           query {
-            services: allMarkdownRemark(
-              filter: { fileAbsolutePath: { regex: "/services/" } }
+            features: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/features/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              edges {
+                node {
+                  id
+                  frontmatter {
+                    path
+                    title
+                    date(formatString: "DD MMMM YYYY")
+                  }
+                  excerpt
+                }
+              }
+            }
+            blog: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/blog/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               edges {
@@ -57,40 +73,63 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `,
-      ).then((result) => {
-        result.data.services.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/service.js');
+        `
+      ).then(result => {
+        console.log(result)
+        result.data.features.edges.forEach(({ node }) => {
+          const component = path.resolve('src/templates/service.js')
           createPage({
             path: node.frontmatter.path,
             component,
             context: {
+              id: node.id
+            }
+          })
+        })
+        console.log('finsihed')
+        result.data.blog.edges.forEach((post, index) => {
+          const allPosts = result.data.blog.edges
+          const node = post.node
+          console.log('the ind node', node)
+          const previous =
+            index === allPosts.length ? null : allPosts[index + 1]
+          const next = index === 0 ? null : allPosts[index - 1]
+          console.log('prev', previous)
+          console.log('next', next)
+          const component = path.resolve('src/templates/blog-post.js')
+          createPage({
+            path: `blog/${node.id}`,
+            component,
+            context: {
               id: node.id,
-            },
-          });
-        });
+              previous,
+              next
+            }
+          })
+        })
+        console.log('fonish 2')
         result.data.team.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/team.js');
+          const component = path.resolve('src/templates/team.js')
           createPage({
             path: node.frontmatter.path,
             component,
             context: {
-              id: node.id,
-            },
-          });
-        });
+              id: node.id
+            }
+          })
+        })
         result.data.testimonials.edges.forEach(({ node }) => {
-          const component = path.resolve('src/templates/testimonial.js');
+          const component = path.resolve('src/templates/testimonial.js')
           createPage({
             path: node.frontmatter.path,
             component,
             context: {
-              id: node.id,
-            },
-          });
-        });
-        resolve();
-      }),
-    );
-  });
-};
+              id: node.id
+            }
+          })
+        })
+        resolve()
+      })
+    )
+  })
+}

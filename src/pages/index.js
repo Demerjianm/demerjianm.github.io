@@ -7,7 +7,9 @@ import Call from '../components/Call'
 
 const Home = props => {
   const markdown = props.data.allMarkdownRemark.edges
+  console.log(props)
   const json = props.data.allFeaturesJson.edges
+  console.log(markdown)
   return (
     <Layout bodyClass="page-home">
       <SEO title="Home" />
@@ -54,7 +56,7 @@ const Home = props => {
             </div>
           ))}
           <div className="col-12 text-center">
-            <Link className="button button-primary mt-2" to="/services">
+            <Link className="button button-primary mt-2" to="/features">
               View All Features
             </Link>
           </div>
@@ -62,24 +64,7 @@ const Home = props => {
       </div>
 
       <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
-        <div className="row justify-content-center">
-          <div className="col-12">
-            <h2 className="title-3 text-dark mb-4">Our Features</h2>
-          </div>
-          {json.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
-              <div className="feature">
-                {edge.node.image && (
-                  <div className="feature-image">
-                    <img src={withPrefix(edge.node.image)} />
-                  </div>
-                )}
-                <h2 className="feature-title">{edge.node.title}</h2>
-                <div className="feature-content">{edge.node.description}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <div className="row justify-content-center" />
       </div>
     </Layout>
   )
@@ -88,7 +73,7 @@ const Home = props => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services/" } }
+      filter: { fileAbsolutePath: { regex: "/features/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

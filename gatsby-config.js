@@ -10,7 +10,7 @@ module.exports = {
     menuLinks: [
       {
         name: 'Features',
-        link: '/services'
+        link: '/features'
       },
       {
         name: 'Team',
@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         name: 'Blog',
-        link: '/testimonials'
+        link: '/blog'
       },
       {
         name: 'Contact',
@@ -50,6 +50,26 @@ module.exports = {
       options: {
         path: `${__dirname}/src/images`,
         name: 'images'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590
+            }
+          }
+        ]
       }
     },
     {
