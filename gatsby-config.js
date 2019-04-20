@@ -2,8 +2,8 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
-    title: 'Baseline',
-    description: 'my theme',
+    title: 'Basepayroll',
+    description: 'Baseline Payroll Site',
     contact: {
       email: 'info@baselinesoftware.io'
     },

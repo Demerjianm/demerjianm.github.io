@@ -1,13 +1,13 @@
 ---
 path: '/team/sage-kirk'
-title: 'Yanling'
+title: 'Nicole Jones'
 date: 2018-11-19T10:47:58+10:00
 draft: false
 image: '/team/default.png'
-jobtitle: 'Full Stack Developer'
+jobtitle: 'Product & Design'
 email:
 linkedinurl:
 weight: 2
 ---
 
-Hi, I will fill this out soon. :)
+Hi im Nicole, ill fill this out soon :)

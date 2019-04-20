@@ -7,9 +7,7 @@ featured: true
 draft: false
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Done are the days of paper work everywhere. Manage all your documents for the employees in one centralized place. Assign specific documents to certain groups of employees and even choice which things need to be required in employee onboarding.
 
 ## Ne verba patulosque numen vix libet
 

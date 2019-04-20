@@ -4,10 +4,10 @@ title: 'Michael Demerjian'
 date: 2018-11-19T10:47:58+10:00
 draft: false
 image: '/team/michael.png'
-jobtitle: 'Professional Wizard'
-email: 'michael@baselinesoftware.io'
-linkedinurl: 'https://www.linkedin.com/in/demerjianm'
-githuburl: 'https://github.com/Demerjianm'
+jobtitle: 'Co-Founder'
+email: 'mailto:michael@baselinesoftware.io'
+linkedinurl: 'https://bit.ly/2X9637g'
+github: 'https://github.com/Demerjianm'
 weight: 1
 ---
 

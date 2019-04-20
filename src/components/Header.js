@@ -41,10 +41,13 @@ class Header extends React.Component {
                 <span style={{ color: getColor() }}>a</span>
                 <span style={{ color: getColor() }}>s</span>
                 <span style={{ color: getColor() }}>e</span>
+                <span style={{ color: getColor() }}>p</span>
+                <span style={{ color: getColor() }}>a</span>
+                <span style={{ color: getColor() }}>y</span>
+                <span style={{ color: getColor() }}>r</span>
+                <span style={{ color: getColor() }}>o</span>
                 <span style={{ color: getColor() }}>l</span>
-                <span style={{ color: getColor() }}>i</span>
-                <span style={{ color: getColor() }}>n</span>
-                <span style={{ color: getColor() }}>e</span>
+                <span style={{ color: getColor() }}>l</span>
               </h2>
             </Link>
           </div>

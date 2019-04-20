@@ -75,7 +75,6 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `
       ).then(result => {
-        console.log(result)
         result.data.features.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/service.js')
           createPage({
@@ -86,16 +85,15 @@ exports.createPages = ({ graphql, actions }) => {
             }
           })
         })
-        console.log('finsihed')
+
         result.data.blog.edges.forEach((post, index) => {
           const allPosts = result.data.blog.edges
           const node = post.node
-          console.log('the ind node', node)
+
           const previous =
             index === allPosts.length ? null : allPosts[index + 1]
           const next = index === 0 ? null : allPosts[index - 1]
-          console.log('prev', previous)
-          console.log('next', next)
+
           const component = path.resolve('src/templates/blog-post.js')
           createPage({
             path: `blog/${node.id}`,
@@ -107,7 +105,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           })
         })
-        console.log('fonish 2')
+
         result.data.team.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/team.js')
           createPage({

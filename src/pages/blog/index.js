@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import SEO from '../../components/SEO'
 import Layout from '../../layouts/index'
 import { formatPostDate, formatReadingTime } from '../../utils/helpers'
+import Signup from '../../components/Signup.js'
 
 const Servicess = props => {
   const servicess = props.data.allMarkdownRemark.edges
@@ -24,7 +25,7 @@ const Servicess = props => {
           {servicess.map(edge => (
             <div
               key={edge.node.frontmatter.path}
-              className="col-6 col-md-7 mb-1"
+              className="col-12 col-md-7 mb-1"
             >
               <div className="card service service-teaser">
                 <div className="card-content">
@@ -68,6 +69,14 @@ const Servicess = props => {
             //   /> */}
             // </article>
           ))}
+        </div>
+        <div
+          style={{
+            margin: '90px 0 40px 0'
+            // fontFamily: systemFont
+          }}
+        >
+          <Signup />
         </div>
       </div>
     </Layout>

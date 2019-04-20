@@ -4,10 +4,10 @@ title: 'Janden Ma'
 date: 2018-11-19T10:47:58+10:00
 draft: false
 image: '/team/janden-ma.jpg'
-jobtitle: 'I find the Bugs'
+jobtitle: 'Full Stack Developer'
 email:
 linkedinurl: 'https://www.linkedin.com/in/janden-ma-132476122/'
 weight: 2
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.
+Hi, my name is Janden I am JavaScript bug catcher. If there is something wrong in the code I am going to find it. I enjoy long walks on the beach & learning the many languages of the world.

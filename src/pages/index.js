@@ -4,12 +4,12 @@ import Helmet from 'react-helmet'
 import SEO from '../components/SEO'
 import Layout from '../layouts/index'
 import Call from '../components/Call'
-
+import SignupApp from '../components/SignupApp'
 const Home = props => {
   const markdown = props.data.allMarkdownRemark.edges
-  console.log(props)
+
   const json = props.data.allFeaturesJson.edges
-  console.log(markdown)
+
   return (
     <Layout bodyClass="page-home">
       <SEO title="Home" />
@@ -21,16 +21,16 @@ const Home = props => {
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h1>Baseline - Software simplified.</h1>
+          <h1>Basepayroll - Robust Software simplified.</h1>
           <p>
-            Taking the complicated things in business and building simple
-            application to solve them.
+            We knew we wanted to make it simple, we didn't know it would come
+            out this good.
           </p>
         </div>
       </div>
 
       <div className="container pt-2">
-        <Call button />
+        <SignupApp button />
       </div>
 
       <div className="container pt-8 pt-md-10">

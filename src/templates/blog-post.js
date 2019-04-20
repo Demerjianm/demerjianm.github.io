@@ -5,10 +5,9 @@ import Layout from '../layouts/index'
 import { formatPostDate, formatReadingTime } from '../utils/helpers'
 import Signup from '../components/Signup.js'
 const Service = props => {
-  console.log(props)
   const { data } = props
   const { previous, next } = props.pageContext
-  console.log(previous, next)
+
   const { title, date } = data.markdownRemark.frontmatter
   const { html, timeToRead } = data.markdownRemark
   return (

@@ -7,9 +7,7 @@ featured: true
 draft: false
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Bringing together over 100 yrs of combined payroll/ time & attendance/ and hr we have developed a accrual solution that we belive is state of the art. It not only gives you enough functionality to design and implement custom policies to suite your needs. We deliver it an accurate manner with great tools to help keep you in compliance.
 
 ## Ne verba patulosque numen vix libet
 

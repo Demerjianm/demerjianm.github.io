@@ -6,14 +6,7 @@ image: '/services/default.png'
 featured: true
 ---
 
-Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares
-ignisque quaerit dederat gemino Aethiopesque [caelo](#inque-ne-collocat)
-ulciscitur est. Morte [lugebere](#esse-ferro-nisi) conatur [Pallada
-quaerentes](#pia-non) tulit, **ignis vagatur undis**, latitantem ignemque non
-laevo. Terras seu favoni tectas movit hunc motuque damno tutoque quattuor. Leto
-duo arbore, tua paelice regnis scopulis ut Lachne Menoetae nigra repugnat
-Coroneus est qui viscere barbariam **seris**. Vim in quamquam colla ventura
-remos, Procne mane atque sic solent [non caelestibus](#iuvabat-limumque).
+Stop gathering all that data and then re-entering it into your software. With the ability to have employee self onboarding, import through csv/xls or manual add employees yourself you should be able to eliminate some of the biggest headaches of growing. While at the same time making a great impression to new hires, easier onboarding makes everyone happy.
 
 ## Inter pectore totidem
 
