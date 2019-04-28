@@ -10,4 +10,4 @@ linkedinurl:
 weight: 2
 ---
 
-Hi im Nicole, ill fill this out soon :)
+Hi, I'm Nicole✌🏻 also known as, Ween.  I dance and I read and I suffer from severe sandwich OCD.  My dream is to own a ranch full of wiener dogs (all dogs welcome, really).  But for now, I'll keep my day job and slay dem screens;)
